@@ -3,42 +3,42 @@
     "step": {
       "user": {
         "title": "Hidraqua Water",
-        "description": "Accede al área de clientes de Hidraqua.",
+        "description": "Sign in to your Hidraqua customer portal.",
         "data": {
-          "username": "Usuario",
-          "password": "Contraseña",
-          "portal_url": "URL del portal",
-          "contract_number": "Número de contrato (opcional)"
+          "username": "Username",
+          "password": "Password",
+          "portal_url": "Portal URL",
+          "contract_number": "Contract number (optional)"
         },
         "data_description": {
-          "portal_url": "URL base del portal de clientes. Por defecto, Hidraqua.",
-          "contract_number": "Filtra por un contrato concreto. Déjalo vacío para usar el que devuelva el portal."
+          "portal_url": "Portal base URL. Defaults to the Hidraqua customer portal.",
+          "contract_number": "Restrict to a specific contract. Leave empty to use whichever the portal returns."
         }
       }
     },
     "error": {
-      "invalid_auth": "Usuario o contraseña incorrectos.",
-      "unsupported_portal": "El portal no parece utilizar el acceso Veolia/Liferay compatible.",
-      "cdn_blocked": "El sistema de protección del portal ha bloqueado la conexión (HTTP 403/429). Prueba más tarde.",
-      "cannot_connect": "No se pudo conectar con el portal.",
-      "unknown": "Error inesperado. Consulta los registros de Home Assistant."
+      "invalid_auth": "Wrong username or password.",
+      "unsupported_portal": "This portal does not appear to use the supported Veolia/Liferay login.",
+      "cdn_blocked": "The portal's CDN returned a block (HTTP 403/429). Try again later.",
+      "cannot_connect": "Could not reach the portal.",
+      "unknown": "Unexpected error. Check the logs."
     },
     "abort": {
-      "already_configured": "Esta cuenta ya está configurada."
+      "already_configured": "This account is already configured."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "Opciones de Hidraqua Water",
+        "title": "Hidraqua Water options",
         "data": {
-          "scan_interval_hours": "Intervalo de consulta (horas)",
-          "contract_number": "Número de contrato (opcional)",
-          "portal_site": "Nombre del sitio del portal (avanzado)"
+          "scan_interval_hours": "Poll interval (hours)",
+          "contract_number": "Contract number (optional)",
+          "portal_site": "Portal site name (advanced)"
         },
         "data_description": {
-          "scan_interval_hours": "Cada cuánto consultar el portal. 6 horas coincide con el ritmo de actualización habitual del contador inteligente.",
-          "portal_site": "Nombre Liferay de la URL del portal, dentro de /group/<sitio>/inicio. Déjalo vacío para detectarlo automáticamente."
+          "scan_interval_hours": "How often to poll the portal. 6 h matches the smart meter's daily upload cadence.",
+          "portal_site": "Liferay site name in the portal URL, e.g. `soreaonline` in /group/soreaonline/inicio. Leave empty to detect it automatically."
         }
       }
     }

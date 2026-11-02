@@ -1,3 +1,7 @@
+## Hidraqua Water 0.1.1
+
+- Added Spanish translations for all sensor names and the reading and invoice status labels.
+
 ## Hidraqua adaptation (2026-11-02)
 
 - Added a separate `hidraqua_water` Home Assistant integration with `https://hidraqua.veolia.es` as its default portal.

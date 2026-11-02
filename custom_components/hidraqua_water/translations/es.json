@@ -11,7 +11,7 @@
           "contract_number": "Número de contrato (opcional)"
         },
         "data_description": {
-          "portal_url": "URL base del portal de clientes. Por defecto, Hidraqua.",
+          "portal_url": "URL base del portal de clientes de Hidraqua.",
           "contract_number": "Filtra por un contrato concreto. Déjalo vacío para usar el que devuelva el portal."
         }
       }
@@ -37,7 +37,7 @@
           "portal_site": "Nombre del sitio del portal (avanzado)"
         },
         "data_description": {
-          "scan_interval_hours": "Cada cuánto consultar el portal. 6 horas coincide con el ritmo de actualización habitual del contador inteligente.",
+          "scan_interval_hours": "Cada cuánto consultar el portal.",
           "portal_site": "Nombre Liferay de la URL del portal, dentro de /group/<sitio>/inicio. Déjalo vacío para detectarlo automáticamente."
         }
       }
@@ -46,64 +46,75 @@
   "entity": {
     "sensor": {
       "meter_index": {
-        "name": "Meter index"
+        "name": "Lectura del contador"
       },
       "consumption_period": {
-        "name": "Period consumption"
+        "name": "Consumo del periodo"
       },
       "period_avg_daily": {
-        "name": "Period avg daily"
+        "name": "Media diaria del periodo"
       },
       "latest_daily_consumption": {
-        "name": "Latest daily consumption"
+        "name": "Consumo diario más reciente"
       },
       "rolling_7d_avg": {
-        "name": "7-day rolling average"
+        "name": "Media de consumo de 7 días"
       },
       "month_to_date": {
-        "name": "Month-to-date consumption"
+        "name": "Consumo del mes actual"
       },
       "last_reading_date": {
-        "name": "Last reading date"
+        "name": "Fecha de última lectura"
       },
       "reading_type": {
-        "name": "Reading type"
+        "name": "Tipo de lectura",
+        "state": {
+          "real": "Real",
+          "estimated": "Estimada"
+        }
       },
       "period_days": {
-        "name": "Period days"
+        "name": "Días del periodo"
       },
       "last_invoice_amount": {
-        "name": "Last invoice amount"
+        "name": "Importe de la última factura"
       },
       "last_invoice_status": {
-        "name": "Last invoice status"
+        "name": "Estado de la última factura",
+        "state": {
+          "pending": "Pendiente",
+          "issued": "Emitida",
+          "sent": "Enviada",
+          "paid": "Pagada",
+          "overdue": "Vencida"
+        }
       },
       "last_invoice_period_end": {
-        "name": "Last invoice period end"
+        "name": "Fin del periodo facturado"
       },
       "last_invoice_issue_date": {
-        "name": "Last invoice issue date"
+        "name": "Fecha de emisión de la última factura"
       },
       "current_period_end_estimate": {
-        "name": "Current period ends (estimate)"
+        "name": "Fin estimado del periodo actual"
       },
       "next_invoice_date_estimate": {
-        "name": "Next invoice date (estimate)"
+        "name": "Fecha estimada de la próxima factura"
       },
       "flow_qmax_today": {
-        "name": "Peak flow today"
+        "name": "Caudal máximo del día"
       },
       "flow_qmin_today": {
-        "name": "Min flow today"
+        "name": "Caudal mínimo del día"
       },
       "flow_qmax_time_today": {
-        "name": "Peak flow time today"
+        "name": "Hora del caudal máximo"
       },
       "flow_data_date": {
-        "name": "Latest flow data date"
+        "name": "Fecha del último dato de caudal"
       },
       "possible_leak": {
-        "name": "Possible leak"
+        "name": "Posible fuga"
       }
     }
   }
