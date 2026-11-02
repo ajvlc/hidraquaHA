@@ -1,0 +1,8 @@
+{
+  "name": "Hidraqua Water",
+  "homeassistant": "2024.4.0",
+  "render_readme": true,
+  "country": [
+    "es"
+  ]
+}

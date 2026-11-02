@@ -1,0 +1,12 @@
+{
+  "domain": "hidraqua_water",
+  "name": "Hidraqua Water",
+  "config_flow": true,
+  "dependencies": [
+    "recorder"
+  ],
+  "documentation": "https://hidraqua.veolia.es/",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "version": "0.1.0"
+}

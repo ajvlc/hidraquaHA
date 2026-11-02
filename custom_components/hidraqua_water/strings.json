@@ -1,0 +1,110 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Hidraqua Water",
+        "description": "Accede al área de clientes de Hidraqua.",
+        "data": {
+          "username": "Usuario",
+          "password": "Contraseña",
+          "portal_url": "URL del portal",
+          "contract_number": "Número de contrato (opcional)"
+        },
+        "data_description": {
+          "portal_url": "URL base del portal de clientes. Por defecto, Hidraqua.",
+          "contract_number": "Filtra por un contrato concreto. Déjalo vacío para usar el que devuelva el portal."
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Usuario o contraseña incorrectos.",
+      "unsupported_portal": "El portal no parece utilizar el acceso Veolia/Liferay compatible.",
+      "cdn_blocked": "El sistema de protección del portal ha bloqueado la conexión (HTTP 403/429). Prueba más tarde.",
+      "cannot_connect": "No se pudo conectar con el portal.",
+      "unknown": "Error inesperado. Consulta los registros de Home Assistant."
+    },
+    "abort": {
+      "already_configured": "Esta cuenta ya está configurada."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opciones de Hidraqua Water",
+        "data": {
+          "scan_interval_hours": "Intervalo de consulta (horas)",
+          "contract_number": "Número de contrato (opcional)",
+          "portal_site": "Nombre del sitio del portal (avanzado)"
+        },
+        "data_description": {
+          "scan_interval_hours": "Cada cuánto consultar el portal. 6 horas coincide con el ritmo de actualización habitual del contador inteligente.",
+          "portal_site": "Nombre Liferay de la URL del portal, dentro de /group/<sitio>/inicio. Déjalo vacío para detectarlo automáticamente."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_index": {
+        "name": "Meter index"
+      },
+      "consumption_period": {
+        "name": "Period consumption"
+      },
+      "period_avg_daily": {
+        "name": "Period avg daily"
+      },
+      "latest_daily_consumption": {
+        "name": "Latest daily consumption"
+      },
+      "rolling_7d_avg": {
+        "name": "7-day rolling average"
+      },
+      "month_to_date": {
+        "name": "Month-to-date consumption"
+      },
+      "last_reading_date": {
+        "name": "Last reading date"
+      },
+      "reading_type": {
+        "name": "Reading type"
+      },
+      "period_days": {
+        "name": "Period days"
+      },
+      "last_invoice_amount": {
+        "name": "Last invoice amount"
+      },
+      "last_invoice_status": {
+        "name": "Last invoice status"
+      },
+      "last_invoice_period_end": {
+        "name": "Last invoice period end"
+      },
+      "last_invoice_issue_date": {
+        "name": "Last invoice issue date"
+      },
+      "current_period_end_estimate": {
+        "name": "Current period ends (estimate)"
+      },
+      "next_invoice_date_estimate": {
+        "name": "Next invoice date (estimate)"
+      },
+      "flow_qmax_today": {
+        "name": "Peak flow today"
+      },
+      "flow_qmin_today": {
+        "name": "Min flow today"
+      },
+      "flow_qmax_time_today": {
+        "name": "Peak flow time today"
+      },
+      "flow_data_date": {
+        "name": "Latest flow data date"
+      },
+      "possible_leak": {
+        "name": "Possible leak"
+      }
+    }
+  }
+}
