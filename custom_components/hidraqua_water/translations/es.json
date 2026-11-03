@@ -115,6 +115,9 @@
       },
       "possible_leak": {
         "name": "Posible fuga"
+      },
+      "last_successful_update": {
+        "name": "Última consulta correcta"
       }
     }
   }

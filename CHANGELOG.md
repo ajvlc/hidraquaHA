@@ -1,3 +1,7 @@
+## Hidraqua Water 0.1.2
+
+- Added a diagnostic sensor showing the last successful portal fetch, so polling can be distinguished from an unchanged consumption value.
+
 ## Hidraqua Water 0.1.1
 
 - Added Spanish translations for all sensor names and the reading and invoice status labels.

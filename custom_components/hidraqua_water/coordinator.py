@@ -110,6 +110,7 @@ class VeoliaCoordinator(DataUpdateCoordinator[Snapshot]):
 
             return Snapshot(
                 contract=contract,
+                last_successful_update=datetime.now(timezone.utc),
                 reading=reading,
                 invoice=invoice,
                 history=history,

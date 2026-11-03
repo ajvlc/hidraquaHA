@@ -92,6 +92,7 @@ class FlowSummary:
 class Snapshot:
     """Everything we pull from the portal in one cycle for a single contract."""
     contract: Contract
+    last_successful_update: Optional[datetime] = None
     reading: Reading = field(default_factory=lambda: Reading(contract_number=""))
     invoice: Invoice = field(default_factory=lambda: Invoice(contract_number=""))
     history: list[dict] = field(default_factory=list)

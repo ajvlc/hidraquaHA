@@ -104,6 +104,9 @@
       },
       "possible_leak": {
         "name": "Possible leak"
+      },
+      "last_successful_update": {
+        "name": "Last successful update"
       }
     }
   }

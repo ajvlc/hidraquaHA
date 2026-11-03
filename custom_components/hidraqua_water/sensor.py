@@ -225,6 +225,15 @@ SENSORS: tuple[VeoliaSensorDescription, ...] = (
         value_fn=lambda s: s.flow.possible_leak,
         attrs_fn=_flow_date_attr,
     ),
+    VeoliaSensorDescription(
+        key="last_successful_update",
+        translation_key="last_successful_update",
+        name="Last successful update",
+        device_class=SensorDeviceClass.TIMESTAMP,
+        entity_category=EntityCategory.DIAGNOSTIC,
+        icon="mdi:cloud-check-outline",
+        value_fn=lambda s: s.last_successful_update,
+    ),
 )
 
 
